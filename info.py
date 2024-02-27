@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '12774158'))
-API_HASH = environ.get('API_HASH', 'd7b49cf2022c84fdb4fafd71fa229be6')
+API_ID = int(environ.get('API_ID', '28313632'))
+API_HASH = environ.get('API_HASH', 'c89fe5148bde525ef65269b75fdef5b1')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -32,7 +32,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_and_Download")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2052792772').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1722359578').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -48,26 +48,26 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://techvlogamzar:techvlogamzar@cluster0.rigpp2c.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Player-One")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ADIYAFIRBOT:ADIYAFIRBOT@cluster0.cstilak.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "ADIYAFIRBOT")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'moneykamalo.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e4a01a774dc48a4bbfa03ecaac0b249f237820b5')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'onepagelink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'a3dd4ef60181b4f78472627e0eaf756834ab3cd3')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Get_Update_Official')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Get_Update_Official')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Get_Update_Official')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviesdeskgroup')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/moviesdeskgroup')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/moviesdeskgroup')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001777518172'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Get_Update_Official')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001827770766'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviesdeskgroup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://player-one.onrender.com/".format(FQDN)
+    URL = "https://kishorafilter-bot.onrender.com/".format(FQDN)
 else:
-    URL = "https://player-one.onrender.com/".format(FQDN)
+    URL = "https://kishorafilter-bot.onrender.com/".format(FQDN)
 
 
 
